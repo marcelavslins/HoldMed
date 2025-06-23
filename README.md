@@ -1,4 +1,4 @@
-# HoldMed - Plataforma de IA para Monitoramento Pós-Operatório
+# HoldMed - Plataforma de IA para Monitoramento Trans e Pós-Operatório
 
 ## Descrição
 
@@ -9,7 +9,7 @@ HoldMed é uma plataforma inteligente que utiliza inteligência artificial para 
 - **Monitoramento em Tempo Real**: Acompanhamento contínuo de sinais vitais dos pacientes
 - **Análise de IA**: Predição de complicações usando algoritmos de machine learning
 - **Dashboard Interativo**: Interface intuitiva para visualização de dados clínicos
-- **Gestão de Pacientes**: Cadastro e acompanhamento de pacientes pós-cirúrgicos
+- **Gestão de Pacientes**: Cadastro e acompanhamento de pacientes trans e pós-cirúrgicos
 - **Relatórios Médicos**: Geração de insights baseados em dados clínicos
 
 ## Tecnologias Utilizadas
@@ -203,7 +203,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 - **Projeto**: HoldMed
 - **Versão**: 1.0.0
-- **Descrição**: Plataforma de IA para Monitoramento Pós-Operatório
+- **Descrição**: Plataforma de IA para Monitoramento Trans e Pós-Operatório
 
 ## Notas Técnicas
 
