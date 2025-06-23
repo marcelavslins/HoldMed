@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos customizados para HoldMed */
+.holdmed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.patient-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.patient-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.vital-signs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.vital-sign-item {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.vital-sign-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.vital-sign-label {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.alert-high {
+  background-color: #fee;
+  border-left: 4px solid #e74c3c;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.alert-normal {
+  background-color: #efe;
+  border-left: 4px solid #27ae60;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-primary:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+  border-bottom-color: #3498db;
+  color: #3498db;
+  font-weight: 500;
+}
+
+.tab-content {
+  padding: 20px 0;
+}
+
+.chart-container {
+  height: 300px;
+  margin: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+.error {
+  background-color: #fee;
+  color: #e74c3c;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.success {
+  background-color: #efe;
+  color: #27ae60;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.badge-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.badge-success {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Utility classes */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-blue-50 {
+  --tw-gradient-from: #eff6ff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 246, 255, 0));
+}
+
+.to-indigo-100 {
+  --tw-gradient-to: #e0e7ff;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .holdmed-container {
+    padding: 10px;
+  }
+  
+  .vital-signs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .user-info {
+    flex-direction: column;
+  }
+  
+  .tab-list {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #eee;
+    background-color: #f8f9fa;
+  }
+}
+
