@@ -125,10 +125,6 @@ O frontend estará disponível em `http://localhost:5173`
 
 ## Uso da Aplicação
 
-### Login
-- **Email**: admin@holdmed.com
-- **Senha**: admin123
-
 ### Funcionalidades Principais
 
 1. **Dashboard de Pacientes**: Visualize a lista de pacientes em monitoramento
